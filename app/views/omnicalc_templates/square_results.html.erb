@@ -1,0 +1,25 @@
+<h1>Square Results</h1>
+
+<%#= params %>
+
+<dl>
+  <dt>
+    Number
+  </dt>
+  <dd>
+    <%= params.fetch("number")%>
+  </dd>
+
+  <dt>
+    Square
+  </dt>
+  <dd>
+    <%= params.fetch("number").to_f * params.fetch("number").to_f %> 
+  </dd>
+</dl>
+
+<a href="/square/new">
+  Calculate another square
+</a>
+
+  </body>
